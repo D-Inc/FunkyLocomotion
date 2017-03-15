@@ -13,7 +13,7 @@ cache:
     - $HOME/.gradle/wrapper/
 
 script: 
-  - "sudo chmod +x gradlew"
+  - "chmod +x gradlew"
   - "./gradlew build test"
 install: "./gradlew setupCIWorkspace"
 branches:
