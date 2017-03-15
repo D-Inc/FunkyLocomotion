@@ -12,10 +12,10 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-script: 
+script: "./gradlew build test"
+install: 
   - "chmod +x gradlew"
-  - "./gradlew build test"
-install: "./gradlew setupCIWorkspace"
+  - "./gradlew setupCIWorkspace"
 branches:
   only:
   - masa
