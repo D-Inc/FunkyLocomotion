@@ -12,7 +12,9 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
 
-script: "gradle build test"
+script: 
+  - sudo chmod +x gradlew
+  - ./gradlew build test
 install: "gradle setupCIWorkspace"
 branches:
   only:
